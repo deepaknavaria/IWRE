@@ -30,7 +30,7 @@ public class LOGIN extends javax.swing.JFrame {
         try {
             initComponents();
             Class.forName("com.mysql.jdbc.Driver");
-            com=DriverManager.getConnection("jdbc:mysql://localhost/db2","root","root");
+            com=DriverManager.getConnection("jdbc:mysql://localhost/db1","root","root");
             st=com.createStatement();
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(LOGIN.class.getName()).log(Level.SEVERE, null, ex);
